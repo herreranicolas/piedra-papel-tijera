@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P", cursive;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  color: salmon;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
+.contenedorJuego {
+  border: 1px solid salmon;
+  padding: 1rem;
+}
+
+.contenedorMovimientos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.botonMovimiento {
+  display: inline;
+  background-color: gray;
+  font-size: 2rem;
+  width: 4rem;
+  padding-bottom: 1rem;
+  border-radius: 25%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.botonMovimiento:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.contenedorScore {
+  border: 1px solid bisque;
+  margin: 1rem 0px;
+  padding: 1rem 0px;
+  color: salmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorScore p {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.contenedorScore span {
+  color: bisque;
+}
+
+#contenedorInfoMovimientos {
+  color: bisque;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid bisque;
+}
+
+.contenedorBtnReiniciar {
+  text-align: center;
+  transition: transform 0.1s;
+}
+
+.btnReiniciar {
+  font-family: "Press Start 2P", cursive;
+  background-color: gray;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  color: black;
+  text-shadow: 1px 1px salmon;
+  text-transform: uppercase;
+}
+
+.btnReiniciar:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  h1 {
+ width: 50%;
+  }
+
+  main {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  }
+
+  .contenedorJuego{
+    width: 50%;
+  }
+
+  .contenedorScore {
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
